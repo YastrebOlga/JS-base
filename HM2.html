@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<!-- Задание 1. -->
+<script>
+    'use strict';
+    let a = 1,
+        b = 1,
+        c, d;
+    c = ++a;
+    alert(c); //  ++ это пресфиксная форма инкремента,который увеличивает число на 1 следовательно 1 +1 =2, ответ 2
+
+    d = b++;
+    alert(d); //  ++ это постфиксная форма инкремента,который увеличивает число на 1 ,но возвращает значение на старое значит, которое было до увеличения b=2, ответ 1
+
+    c = (2 + ++a);
+    alert(c); //т.к. а=2 в строке 6 значит 2+1=3 и +2 =5 Ответ 5
+
+    d = (2 + b++);
+    alert(d); //  b= 2+1=2  b=3 но так как у нас был посфиксная форма мы пишем  2, 2+2 =4 Ответ 4
+
+    alert(a); // в строке 9 в уже имело значение 3  ответ 3
+    alert(b); // в строке 11 уже имело значение  3 Ответ 3
+</script>
+
+<!-- Задание 2. x=1+(a=2*2) ответ=5 -->
+<script>
+    var a = 2;
+    var x = 1 + (a *= 2);
+</script>
+
+
+//
+<!-- Задание 3. -->
+<script>
+    let firstNomber = 9;
+    let secondNumber = 4;
+
+    if (firstNomber > 0 && secondNumber > 0) {
+        homeWorkeTask3 = firstNomber - secondNumber;
+        alert(homeWorkeTask3);
+    } else if (firstNomber < 0 && secondNumber < 0) {
+        homeWorkeTask3 = firstNomber * secondNumber;
+        alert(homeWorkeTask3);
+    } else if (firstNomber > 0 && secondNumber < 0 || firstNomber 0 && secondNumber > 0) {
+        homeWorkeTask3 = firstNomber + secondNumber;
+        alert(homeWorkeTask3);
+    }
+</script>
+
+<!-- Задание 4. -->
+<script>
+    homeTask4 = +prompt('Введите число от 1 до 15');
+    let homeTask4 = anyNumber;
+    while (anyNumber >= 15) {
+        alert('Ваше число ' + anyNumber);
+        anyNumber++;
+        break;
+    }
+</script>
+
+<!-- Задание 5. -->
+<script>
+    let firstNomberTask6 = 2;
+    let secondNomberTask6 = 3;
+
+    function plus(firstNomberTask6, secondNomberTask6) {
+        return firstNomberTask6 + secondNomberTask6;
+    }
+
+    function minus(firstNomberTask6, secondNomberTask6) {
+        return firstNomberTask6 - secondNomberTask6;
+    }
+
+    function div(firstNomberTask6, secondNomberTask6) {
+        return firstNomberTask6 / secondNomberTask6;
+    }
+
+    function mult(firstNomberTask6, secondNomberTask6) {
+        return firstNomberTask6 + secondNomberTask6;
+    }
+</script>
+
+
+<!-- Задание 6. -->
+<script>
+    function operationMath(ar1, ar2, operation) {
+        switch (operation) {
+            case 'сложение':
+                return ar1 + ar2;
+                break;
+            case 'вычитание':
+                return ar1 - ar2;
+                break;
+            case 'деление':
+                return ar1 / ar2;
+                break;
+            case 'умножение':
+                return ar1 * ar2;
+                break;
+        }
+    }
+</script>
+
+</html>
