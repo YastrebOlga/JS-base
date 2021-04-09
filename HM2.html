@@ -44,70 +44,61 @@
 <!-- Задание 3. -->
 <script>
     'use strict';
-    let firstNomber = 9;
-    let secondNumber = 4;
+        let firstNomber = 9;
+        let secondNumber = 4;
 
-    if (firstNomber > 0 && secondNumber > 0) {
-        homeWorkeTask3 = firstNomber - secondNumber;
-        alert(homeWorkeTask3);
-    } else if (firstNomber < 0 && secondNumber < 0) {
-        homeWorkeTask3 = firstNomber * secondNumber;
-        alert(homeWorkeTask3);
-    } else if (firstNomber > 0 && secondNumber < 0 || firstNomber 0 && secondNumber > 0) {
-        homeWorkeTask3 = firstNomber + secondNumber;
-        alert(homeWorkeTask3);
-    }
+        if (firstNomber > 0 && secondNumber > 0) {
+            homeWorkeTask3 = firstNomber - secondNumber;
+            alert(homeWorkeTask3);
+        } else if (firstNomber < 0 && secondNumber < 0) {
+            homeWorkeTask3 = firstNomber * secondNumber;
+            alert(homeWorkeTask3);
+        } else if (firstNomber > 0 && secondNumber < 0 ) {
+            homeWorkeTask3 = firstNomber + secondNumber;
+            alert(homeWorkeTask3);
+        }
 </script>
 
 <!-- Задание 4. -->
 <script>
     'use strict';
-    homeTask4 = +prompt('Введите число от 1 до 15');
-    
-    let homeTask4 = anyNumber;
-    do {
-  alert( anyNumber );
+  let anyNumber = +prompt('Введите число от 1 до 15');
+
     while (anyNumber >= 15) 
-    { anyNumber++;
-        alert('Ваше число ' + anyNumber);
+    { 
+        if (anyNumber == null) break;
+        alert(anyNumber);
+        anyNumber++;
     }
-</script>
-//или
-<script>
-    homeTask4 = +prompt('Введите число от 1 до 15');
-    
-for (let homeTask4 = anyNumber;  anyNumber >= 15; anyNumber++)
- { 
-  alert(anyNumber);
-}
-</script>
+ </script>
 
 <!-- Задание 5. -->
+
 <script>
     'use strict';
-    let firstNomberTask6 = 2;
-    let secondNomberTask6 = 3;
+    let firstNomberTask5 = 2;
+    let secondNomberTask5 = 3;
 
-    function plus(firstNomberTask6, secondNomberTask6) {
+    function plus(firstNomberTask5, secondNomberTask5) {
         return firstNomberTask6 + secondNomberTask6;
     }
 
-    function minus(firstNomberTask6, secondNomberTask6) {
+    function minus(firstNomberTask5, secondNomberTask5) {
         return firstNomberTask6 - secondNomberTask6;
     }
 
-    function div(firstNomberTask6, secondNomberTask6) {
+    function div(firstNomberTask5, secondNomberTask5) {
         return firstNomberTask6 / secondNomberTask6;
     }
 
-    function mult(firstNomberTask6, secondNomberTask6) {
+    function mult(firstNomberTask5, secondNomberTask5) {
         return firstNomberTask6 + secondNomberTask6;
     }
 </script>
 
 
 <!-- Задание 6. -->
-<>
+<script>
     'use strict';
     function operationMath(ar1, ar2, operation) {
         switch (operation) {
@@ -125,6 +116,6 @@ for (let homeTask4 = anyNumber;  anyNumber >= 15; anyNumber++)
                 break;
         }
     }
-</>
+</script>
 
 </html>
