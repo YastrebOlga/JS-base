@@ -65,10 +65,11 @@
     let anyNumber = +prompt('Введите число от 1 до 15');
 
     while (anyNumber >= 15) {
-        if (anyNumber == null) break;
         alert(anyNumber);
         anyNumber++;
     }
+    if (anyNumber == null)
+        break;
 </script>
 
 <!-- Задание 5. -->
