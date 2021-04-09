@@ -98,6 +98,8 @@
 <!-- Задание 6. -->
 <script>
     'use strict';
+    let firstNomber = arg1;
+    let secondNumber = arg2;
 
     function operationMath(arg1, arg2, operation) {
         switch (operation) {
@@ -111,7 +113,7 @@
                 return arg1 / arg2;
                 break;
             case 'умножение':
-                return arg1 * arg2;
+                return (-arg1) * arg2;
                 break;
         }
     }
