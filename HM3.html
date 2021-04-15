@@ -1,91 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 
 
-<!-- Задание 1. -->
-
-<script>
-          'use strict';
-          var prime = []; 
-for(var i = 2; i < 100; i++)
-{
-    var isPrime = true; 
-    for(var j = 2; j < i; j++) 
-    {
-        var p = i % j;
-        if(p == 0)
-        {
-            isPrime = false;
-            break;
-        }
-    }
-    if(isPrime) prime.push(i); 
-}
-
-for(var k = 0; k < prime.length; k++)
-{
-    document.writeln(prime[k], "<br>");
-}
-    </script>
-
-<!--Задание 2. -->
+    <!-- Задание 1. -->
 
     <script>
-       'use strict';
-       function getNumber(min, max){
-            let number = parseInt(Math.random()*(max - min) + min);
+        'use strict';
+        var prime = [];
+        for (var i = 2; i < 100; i++) {
+            var isPrime = true;
+            for (var j = 2; j < i; j++) {
+                var p = i % j;
+                if (p == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) prime.push(i);
+        }
+
+        for (var k = 0; k < prime.length; k++) {
+            document.writeln(prime[k], "<br>");
+        }
+    </script>
+
+    <!--Задание 2. -->
+
+    <script>
+        'use strict';
+
+        function getNumber(min, max) {
+            let number = parseInt(Math.random() * (max - min) + min);
             if (number === -0) number = 0;
             return number;
         }
-       let basket = [
-            {
-                product: "pen",
-                price: getNumber(50, 100)
-            },
-            {
-                product: "pencil",
-                price: getNumber(50, 100)
-            },
-            {
-                product: "file",
-                price: getNumber(50, 100)
-            },
-            {
-                product: "paper",
-                price: getNumber(50, 100)
-            }
-        ];
+        let basket = [{
+            product: "pen",
+            price: getNumber(50, 100)
+        }, {
+            product: "pencil",
+            price: getNumber(50, 100)
+        }, {
+            product: "file",
+            price: getNumber(50, 100)
+        }, {
+            product: "paper",
+            price: getNumber(50, 100)
+        }];
         let basketPrice = 0;
-        for (let prod of basket){
+        for (let prod of basket) {
             basketPrice += prod.price;
             console.log("Товар " + prod.product + " стоит: " + prod.price);
         }
 
         console.log("Стоимость корзины: " + basketPrice + " у.е.");
-        
-
     </script>
 
- <!-- Задание 3. -->
-       <script>
+    <!-- Задание 3. -->
+    <script>
+        'use strict';
 
-        console.log('======== 3 задание ========');
         function countBasketPrice(basket) {
             let funBasketPrice = 0;
-            for (let prod of basket){
+            for (let prod of basket) {
                 funBasketPrice += prod.price;
             }
             return funBasketPrice;
         }
 
         console.log("Стоимость корзины: " + countBasketPrice(basket) + " у.е.");
+    </script>
+    <!-- Задание 4. -->
+    <script>
+        'use strict';
+        let fourTask = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-</script>
-
+        for (let element of fourTask) {
+            console.log(element)
+        }
+    </script>
 </body>
+
 </html>
